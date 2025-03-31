@@ -1,0 +1,202 @@
+/* header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 20px;
+}
+header .num {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+header .header_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+header .header_wrap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 34px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 9px 0;
+}
+header .header_wrap .naver {
+  font-size: 14px;
+  font-weight: 500;
+  color: #01c136;
+  border: 1px solid #01c136;
+}
+header .header_wrap .naver img {
+  margin-right: 2px;
+}
+header .header_wrap .point {
+  font-size: 13px;
+  font-weight: 800;
+  color: #000;
+  border: 1px solid #f8e40a;
+}
+header .header_wrap .point img {
+  margin-right: 5px;
+}
+header .header_wrap .setting_btn {
+  margin-left: 2px;
+}
+
+/* wrapper */
+.wrapper {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.talk_wrap .talk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.talk_wrap .talk .profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 7px;
+}
+.talk_wrap .talk .talk_cont {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.talk_wrap .talk .talk_cont .company {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.talk_wrap .talk .talk_cont .talk_box {
+  border-radius: 10px;
+  background-color: #fff;
+}
+.talk_wrap .talk .talk_cont .talk_box h3 {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 0;
+}
+.talk_wrap .talk .talk_cont .talk_box .cont {
+  padding: 15px;
+}
+.talk_wrap .talk .talk_cont .talk_box .cont h5,
+.talk_wrap .talk .talk_cont .talk_box .cont p {
+  white-space: wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  letter-spacing: -0.26px;
+  overflow: hidden;
+}
+.talk_wrap .talk .talk_cont .talk_box .cont h5 {
+  font-size: 14px;
+  line-height: 1.29;
+  -webkit-line-clamp: 2;
+}
+.talk_wrap .talk .talk_cont .talk_box .cont p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.38;
+  -webkit-line-clamp: 5;
+}
+.talk_wrap .talk .talk_cont .time {
+  font-size: 11px;
+  text-align: right;
+  color: #888;
+  margin-top: 8px;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  background-color: var(--change-color);
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav ul li {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+nav ul li:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+nav ul li.no_icon a::before {
+  width: 0;
+  height: 0;
+  margin-bottom: 0;
+}
+nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 80px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+}
+nav ul li a::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 9px;
+}
+nav ul li:nth-child(1) a::before {
+  background: url("../img/icon-menu-coupon.svg") no-repeat center;
+}
+nav ul li:nth-child(2) a::before {
+  background: url("../img/icon-menu-best.svg") no-repeat center;
+}
+nav ul li:nth-child(3) a::before {
+  background: url("../img/icon-menu-instagram.svg") no-repeat center;
+}
+nav ul li:nth-child(4) a::before {
+  background: url("../img/icon-menu-instagram.svg") no-repeat center;
+}/*# sourceMappingURL=detail.css.map */

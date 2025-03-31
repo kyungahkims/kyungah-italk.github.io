@@ -1,0 +1,196 @@
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 13px 20px;
+
+	.num {
+		font-size: 16px;
+		font-weight: 500;
+		margin-left: 10px;
+	}
+
+	.header_wrap {
+		display: flex;
+		column-gap: 8px;
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 34px;
+			border-radius: 5px;
+			background-color: #fff;
+			padding: 9px 0;
+		}
+
+		.naver {
+			font-size: 14px;
+			font-weight: 500;
+			color: #01c136;
+			border: 1px solid #01c136;
+
+			img {
+				margin-right: 2px;
+			}
+		}
+
+		.point {
+			font-size: 13px;
+			font-weight: 800;
+			color: #000;
+			border: 1px solid #f8e40a;
+
+			img {
+				margin-right: 5px;
+			}
+		}
+
+		.setting_btn {
+			margin-left: 2px;
+		}
+	}
+}
+
+/* wrapper */
+.wrapper {
+	background-color: #f8f8f8;
+	padding: 20px;
+}
+
+.talk_wrap {
+	.talk {
+		display: flex;
+		margin-bottom: 20px;
+
+		.profile {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-right: 7px;
+		}
+
+		.talk_cont {
+			flex: 1;
+
+			.company {
+				font-size: 13px;
+				margin-bottom: 5px;
+			}
+
+			.talk_box {
+				border-radius: 10px;
+				background-color: #fff;
+
+				h3 {
+					font-size: 14px;
+					font-weight: bold;
+					text-align: center;
+					padding: 12px 0;
+				}
+
+				.cont {
+					padding: 15px;
+
+					h5,
+					p {
+						white-space: wrap;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						letter-spacing: -0.26px;
+						overflow: hidden;
+					}
+
+					h5 {
+						font-size: 14px;
+						line-height: 1.29;
+						-webkit-line-clamp: 2;
+					}
+
+					p {
+						font-size: 13px;
+						color: #777;
+						line-height: 1.38;
+						-webkit-line-clamp: 5;
+					}
+				}
+			}
+
+			.time {
+				font-size: 11px;
+				text-align: right;
+				color: #888;
+				margin-top: 8px;
+			}
+		}
+	}
+}
+
+/* nav */
+nav {
+	width: 100%;
+	background-color: var(--change-color);
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		li {
+			flex: 25%;
+
+			&:not(:last-child) {
+				border-right: 1px solid rgba(255, 255, 255, 0.3);
+			}
+
+			&.no_icon {
+				a::before {
+					width: 0;
+					height: 0;
+					margin-bottom: 0;
+				}
+			}
+
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				flex: 1;
+				height: 80px;
+				text-align: center;
+				font-size: 13px;
+				color: #fff;
+				cursor: pointer;
+
+				&::before {
+					content: "";
+					display: block;
+					width: 22px;
+					height: 22px;
+					margin-bottom: 9px;
+				}
+			}
+
+
+			&:nth-child(1) a::before {
+				background: url('../img/icon-menu-coupon.svg') no-repeat center;
+			}
+
+			&:nth-child(2) a::before {
+				background: url('../img/icon-menu-best.svg') no-repeat center;
+			}
+
+			&:nth-child(3) a::before {
+				background: url('../img/icon-menu-instagram.svg') no-repeat center;
+			}
+
+			&:nth-child(4) a::before {
+				background: url('../img/icon-menu-instagram.svg') no-repeat center;
+			}
+		}
+	}
+}
