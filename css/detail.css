@@ -1,5 +1,6 @@
 /* header */
 header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,6 +11,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 13px 20px;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
 }
 header .num {
   display: -webkit-box;
