@@ -32,3 +32,14 @@ $('.modal_wrap, .pop .cancle_btn, .pop .close_btn').click(function () {
 $('.pop').click(function (e) {
 	e.stopPropagation();
 });
+
+/* resize */
+$(document).ready(function () {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+	$(window).on('resize', function () {
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	});
+});

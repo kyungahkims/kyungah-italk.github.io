@@ -409,6 +409,7 @@ nav ul li:nth-child(4) a::before {
 .modal_wrap.modal_wrap1 .pop .modal_btn button {
   width: 115px;
   height: 40px;
+  font-size: 15px;
   border-radius: 5px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
