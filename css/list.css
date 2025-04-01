@@ -13,6 +13,9 @@ header .close_btn {
   position: absolute;
   top: 19px;
   right: 20px;
+  width: 19px;
+  height: 19px;
+  background: url("../img/btn-close.svg") no-repeat center;
 }
 
 /* btn_wrap */
@@ -43,7 +46,14 @@ header .close_btn {
   background-color: #f8f8f8;
   padding: 15px 0;
 }
-.btn_wrap a .change {
+.btn_wrap a.naver_pay::before {
+  content: "";
+  display: inline-block;
+  width: 55px;
+  height: 19px;
+  background: url("../img/icon-npay.svg") no-repeat center;
+}
+.btn_wrap a.naver_pay span {
   font-size: 11px;
   color: #fff;
   border-radius: 10px;
@@ -51,7 +61,14 @@ header .close_btn {
   padding: 3px 11px;
   margin-left: 5px;
 }
-.btn_wrap a .point {
+.btn_wrap a.talk_point::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-talkpoint.svg") no-repeat center;
+}
+.btn_wrap a.talk_point span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +79,7 @@ header .close_btn {
   font-weight: 800;
   margin-left: 5px;
 }
-.btn_wrap a .point::after {
+.btn_wrap a.talk_point span::after {
   content: "";
   width: 6px;
   height: 9px;
@@ -133,16 +150,25 @@ header .close_btn {
           flex: 1;
 }
 .list_wrap li .left .cont .point {
-  display: inline-block;
-  color: #000;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
+  color: #000;
   border: 1px solid #f3f4f6;
   border-radius: 9px;
   background-color: #f6f6f6;
   padding: 2px 6px;
   margin-bottom: 5px;
 }
-.list_wrap li .left .cont .point img {
+.list_wrap li .left .cont .point::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url("../img/icon-point.svg") no-repeat center;
   margin-right: 3px;
 }
 .list_wrap li .left .cont p {
