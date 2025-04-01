@@ -243,6 +243,7 @@ header .header_wrap .setting_btn {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  margin-bottom: 3px;
 }
 .talk_wrap .talk .talk_cont .talk_box.wide_box .cont_wrap:not(:last-child) {
   margin-bottom: 15px;
@@ -270,13 +271,13 @@ header .header_wrap .setting_btn {
   padding: 12px;
 }
 .talk_wrap .talk .talk_cont .talk_box.carousel_box .talk_list:not(:nth-child(1)) {
-  margin-top: 22px;
+  margin-top: 19px;
 }
 .talk_wrap .talk .talk_cont .talk_box.carousel_box .cont {
-  padding: 15px 0 0 0;
+  padding: 15px 0 3px 0;
 }
 .talk_wrap .talk .talk_cont .talk_box.carousel_box .btn_wrap {
-  margin-top: 15px;
+  margin-top: 12px;
 }
 .talk_wrap .talk .talk_cont .time {
   font-size: 11px;
