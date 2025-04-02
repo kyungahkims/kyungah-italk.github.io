@@ -96,29 +96,34 @@ header {
 /* talk_wrap */
 .talk_wrap {
 	.talk {
-		display: flex;
 		margin-bottom: 20px;
 
-		.profile {
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			overflow: hidden;
-			margin-right: 7px;
+		/* company_wrap */
+		.company_wrap {
+			display: flex;
+			margin-bottom: 5px;
+
+			.profile {
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-right: 7px;
+			}
+
+			span {
+				font-size: 13px;
+			}
 		}
 
 		.talk_cont {
 			flex: 1;
 
-			.company {
-				font-size: 13px;
-				margin-bottom: 5px;
-			}
-
 			/* talk_box */
 			.talk_box {
 				border-radius: 10px;
 				background-color: #fff;
+				margin-left: 27px;
 
 				h3 {
 					font-size: 14px;
@@ -323,7 +328,6 @@ nav {
 					margin-bottom: 9px;
 				}
 			}
-
 
 			&:nth-child(1) a::before {
 				background: url('../img/icon-menu-coupon.svg') no-repeat center;
