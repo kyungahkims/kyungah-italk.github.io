@@ -43,18 +43,20 @@ $('.swiper_wrap').each(function (t) {
 });
 
 /* 슬라이드 높이 동일하게 */
-window.addEventListener("load", function () {
-	let slides = document.querySelectorAll(".swiper-slide");
+function setEqualSlideHeight() {
 	let maxHeight = 0;
 
-	slides.forEach(slide => {
-		let height = slide.offsetHeight;
+	$(".swiper-slide").css("height", "auto");
+
+	$(".swiper-slide").each(function () {
+		let height = $(this).outerHeight();
 		if (height > maxHeight) {
 			maxHeight = height;
 		}
 	});
 
-	slides.forEach(slide => {
-		slide.style.height = maxHeight + "px";
-	});
-});
+	$(".swiper-slide").height(maxHeight);
+}
+
+$(window).on("load", setEqualSlideHeight);
+$(window).resize(setEqualSlideHeight).trigger('resize');
