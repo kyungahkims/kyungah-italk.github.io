@@ -112,6 +112,15 @@ header .header_wrap .setting_btn {
   background-color: #f8f8f8;
   padding: 20px;
 }
+.wrapper.wrapper2 {
+  padding: 20px 0px;
+}
+.wrapper.wrapper2 .talk_wrap .talk {
+  /* company_wrap */
+}
+.wrapper.wrapper2 .talk_wrap .talk .company_wrap {
+  padding: 0 20px;
+}
 
 /* talk_wrap */
 .talk_wrap .talk {
@@ -135,17 +144,33 @@ header .header_wrap .setting_btn {
   font-size: 13px;
 }
 .talk_wrap .talk .talk_cont {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
+  /* swiper_wrap */
   /* talk_box */
+}
+.talk_wrap .talk .talk_cont.swiper_wrap .swiper {
+  position: relative;
+}
+.talk_wrap .talk .talk_cont.swiper_wrap .swiper .slide_link {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 17px;
+  width: 40px;
+  height: 40px;
+  background: url("../img/btn-more.svg") no-repeat center;
+}
+.talk_wrap .talk .talk_cont.swiper_wrap .time {
+  width: calc((100% + 68px) / 1.5) !important;
 }
 .talk_wrap .talk .talk_cont .talk_box {
   border-radius: 10px;
   background-color: #fff;
   margin-left: 27px;
+  overflow: hidden;
   /* wide_box */
   /* carousel_box */
+  /* alarm_box */
+  /* friend_box */
 }
 .talk_wrap .talk .talk_cont .talk_box h3 {
   font-size: 14px;
@@ -180,6 +205,26 @@ header .header_wrap .setting_btn {
   border-radius: 5px;
   overflow: hidden;
 }
+.talk_wrap .talk .talk_cont .talk_box .cont_title {
+  padding: 12px;
+}
+.talk_wrap .talk .talk_cont .talk_box .cont_title span {
+  display: inline-block;
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 7px;
+}
+.talk_wrap .talk .talk_cont .talk_box .cont_title h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.talk_wrap .talk .talk_cont .talk_box hr {
+  width: calc(100% - 24px);
+  height: 1px;
+  border: 0;
+  background-color: #e0e0e0;
+  margin: 3px auto;
+}
 .talk_wrap .talk .talk_cont .talk_box .cont {
   padding: 15px;
 }
@@ -211,6 +256,12 @@ header .header_wrap .setting_btn {
      -moz-column-gap: 10px;
           column-gap: 10px;
 }
+.talk_wrap .talk .talk_cont .talk_box .btn_wrap.full_step {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 8px;
+  margin: 0 12px 12px;
+}
 .talk_wrap .talk .talk_cont .talk_box .btn_wrap button {
   width: 100%;
   height: 38px;
@@ -221,6 +272,9 @@ header .header_wrap .setting_btn {
   background-color: #ff8494;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+.talk_wrap .talk .talk_cont .talk_box .btn_wrap button.no_icon::after {
+  background: none;
 }
 .talk_wrap .talk .talk_cont .talk_box .btn_wrap button::after {
   content: "";
@@ -233,6 +287,13 @@ header .header_wrap .setting_btn {
 .talk_wrap .talk .talk_cont .talk_box .btn_wrap button:hover {
   -webkit-filter: brightness(1.02);
           filter: brightness(1.02);
+}
+.talk_wrap .talk .talk_cont .talk_box .btn_wrap button.gray {
+  color: #222;
+  background-color: #f0f0f0;
+}
+.talk_wrap .talk .talk_cont .talk_box .btn_wrap button.gray::after {
+  background: url("../img/icon-btn-arrow2.svg") no-repeat center;
 }
 .talk_wrap .talk .talk_cont .talk_box.wide_box {
   padding: 12px;
@@ -285,6 +346,110 @@ header .header_wrap .setting_btn {
 }
 .talk_wrap .talk .talk_cont .talk_box.carousel_box .btn_wrap {
   margin-top: 12px;
+}
+.talk_wrap .talk .talk_cont .talk_box.alarm_box h3 {
+  color: #fff;
+  background-color: #ff8494;
+}
+.talk_wrap .talk .talk_cont .talk_box.alarm_box .cont {
+  padding: 12px;
+}
+.talk_wrap .talk .talk_cont .talk_box.alarm_box .cont p {
+  font-size: 14px;
+  line-height: 1.43;
+  -webkit-line-clamp: 10;
+  color: #222;
+  padding-bottom: 3px;
+}
+.talk_wrap .talk .talk_cont .talk_box.alarm_box .cont p.gray {
+  color: #999;
+  margin-top: 20px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box {
+  /* swiper-slide */
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box.swiper-slide {
+  width: 66.6666666667% !important;
+  margin-left: 0;
+  left: 47px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box.swiper-slide:last-child {
+  margin-right: 35.7142857143%;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box.swiper-slide .cont_title {
+  padding: 3px 0 0;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box.swiper-slide hr {
+  width: 100%;
+  margin: 15px 0;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box.swiper-slide .price_wrap {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.36px;
+  margin-top: 7px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box.swiper-slide .price_wrap .percent {
+  color: #f33c3c;
+  margin-right: 8px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box.swiper-slide .price_wrap .sale_price {
+  margin-right: 5px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box.swiper-slide .price_wrap .original_price {
+  font-size: 13px;
+  font-weight: normal;
+  color: #999;
+  text-decoration: line-through;
+  letter-spacing: -0.26px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .point {
+  margin: 12px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .cont {
+  padding: 12px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .cont p {
+  font-size: 14px;
+  line-height: 1.43;
+  -webkit-line-clamp: 10;
+  color: #222;
+  padding-bottom: 3px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .cont_wrapper {
+  padding: 12px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .cont_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  margin-bottom: 3px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .cont_wrap:not(:last-child) {
+  margin-bottom: 10px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .cont_wrap .box {
+  width: 50px;
+  height: 50px;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .cont_wrap .cont {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .cont_wrap .cont p {
+  -webkit-line-clamp: 2;
+  padding-bottom: 0;
+}
+.talk_wrap .talk .talk_cont .talk_box.friend_box .btn_wrap {
+  margin: 0 12px 12px;
 }
 .talk_wrap .talk .talk_cont .time {
   font-size: 11px;
