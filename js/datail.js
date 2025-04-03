@@ -32,9 +32,9 @@ $('.swiper_wrap').each(function (t) {
 				let currentIndex = this.activeIndex;
 
 				if (currentIndex === totalSlides - 2) {
-					$('.swiper_wrap').eq(t).find('.slide_btn').css('display', 'none');
+					$('.swiper_wrap').eq(t).find('.slide_link').css('display', 'none');
 				} else {
-					$('.swiper_wrap').eq(t).find('.slide_btn').css('display', 'block');
+					$('.swiper_wrap').eq(t).find('.slide_link').css('display', 'block');
 
 				}
 			}
