@@ -61,6 +61,25 @@ textarea {
 	backface-visibility: hidden;
 }
 
+/* checkbox */
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox]+label {
+	display: inline-block;
+	line-height: 20px;
+	background: url('../img/check.svg') left center no-repeat;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+input[type=checkbox]:checked+label {
+	display: inline-block;
+	line-height: 20px;
+	background: url('../img/check-on.svg') left center no-repeat;
+}
+
 /* 스크롤 */
 ::-webkit-scrollbar {
 	width: 7px;
@@ -101,4 +120,50 @@ body {
 .wrapper {
 	flex: 1;
 	overflow-y: auto;
+}
+
+/* pop_up */
+.pop_up {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1001;
+	width: 100%;
+	height: 100vh;
+	font-family: var(--font-family);
+	background: rgba(0, 0, 0, 0.8);
+
+	.pop_content {
+		padding: 0 20px;
+
+		.today {
+			display: flex;
+			justify-content: space-between;
+			font-size: 14px;
+			color: #fff;
+			margin: 12px auto;
+
+			.img {
+				max-width: 320px;
+			}
+
+			button {
+				display: flex;
+				align-items: center;
+				font-size: 14px;
+				color: #fff;
+
+				&::before {
+					content: "";
+					width: 14px;
+					height: 14px;
+					background: url('../img/modal_btn-close.svg') no-repeat center;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
 }
