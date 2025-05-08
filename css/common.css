@@ -189,6 +189,7 @@ body {
   padding: 0 20px;
 }
 .pop_up .pop_content {
+  position: relative;
   max-width: 320px;
   max-height: 555px;
   width: 100%;
@@ -198,17 +199,27 @@ body {
   overflow: hidden;
 }
 .pop_up .pop_content .check_wrap {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
-  font-size: 13px;
-  font-weight: 500;
-  color: #fff;
-  margin: 15px auto;
+  font-size: 10px;
+  letter-spacing: -0.2px;
+  color: #000;
 }
 .pop_up .pop_content .check_wrap input[type=checkbox] + label {
-  padding-left: 26px;
+  line-height: 16px;
+  background: url("../img/check-s.svg") left center no-repeat;
+  padding-left: 20px;
+}
+.pop_up .pop_content .check_wrap input[type=checkbox]:checked + label {
+  line-height: 16px;
+  background: url("../img/check-s-on.svg") left center no-repeat;
 }
 .pop_up .pop_content .btn_wrap {
-  margin: 0 25px 20px;
+  margin: 23px 25px 24px;
 }
 .pop_up .pop_content .btn_wrap button {
   display: -webkit-box;
