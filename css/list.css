@@ -235,6 +235,57 @@ nav ul li {
       -ms-flex: 50%;
           flex: 50%;
 }
+nav ul li:last-child {
+  position: relative;
+}
+nav ul li:last-child .bubble {
+  position: absolute;
+  top: -20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22px;
+  font-size: 11px;
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #000;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 10px;
+}
+nav ul li:last-child .bubble::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url("../img/icon-point2.svg");
+  margin-right: 3px;
+}
+nav ul li:last-child .bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #000;
+}
+nav ul li:last-child .bubble span {
+  color: #f8e40a;
+  font-size: 11px;
+  font-weight: 500;
+  margin-right: 3px;
+}
 nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
