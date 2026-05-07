@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>팝업</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		/* font */
+		@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+		.banner_wrap {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			position: fixed;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1000;
+			width: 100%;
+			max-width: 1024px;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.1);
+			transition: all 0.3s;
+		}
+
+		.banner_wrap .banner_img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.banner_wrap .img {
+			width: 100%;
+			height: auto;
+		}
+
+		.img.mo {
+			display: none;
+		}
+
+		.banner_wrap .brn_wrap {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			background-color: #15004d;
+			padding: 0 6px 6px;
+		}
+
+		.banner_wrap .brn_wrap .today_btn {
+			font-family: 'Pretendard';
+			font-size: 13px;
+			letter-spacing: -0.26px;
+			color: #fff;
+			background-color: transparent;
+			font-family: inherit;
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.banner_wrap .brn_wrap .clode_btn {
+			width: 24px;
+			height: 24px;
+			background: url('../img/btn-close.svg') no-repeat center;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			margin-left: 8px;
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 767px) {
+			.img.mo {
+				display: block;
+			}
+
+			.img.pc {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="banner_wrap">
+		<div class="banner_up">
+			<div class="banner_img">
+				<img src="../img/banner@3x.png" alt="게임&콘덴츠 첫 참여하고 +1,000 포인트 받자!! 이벤트 기간 ~6월 30일까지 *한컴 뷰어 혜택존 전 회원 대상/1회 지급"
+					class="img mo">
+				<img src="../img/banner_w.png" alt="게임&콘덴츠 첫 참여하고 +1,000 포인트 받자!! 이벤트 기간 ~6월 30일까지 *한컴 뷰어 혜택존 전 회원 대상/1회 지급"
+					class="img pc">
+			</div>
+			<div class="brn_wrap"><button type="button" class="today_btn">오늘하루보지않기</button><button type="button"
+					class="clode_btn" aria-label="닫기"></div>
+		</div>
+	</div>
+</body>
+
+</html>
